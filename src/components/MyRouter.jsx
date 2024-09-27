@@ -1,7 +1,6 @@
-// src/components/MyRouter.jsx
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Home from './Home';
+import Films from './Films';
 import HTML from './HTML';
 import CSS from './CSS';
 import JS from './JS';
@@ -14,7 +13,7 @@ const MyRouter = () => {
         <Navbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Films />} />
           <Route path="/html" element={<HTML />} />
           <Route path="/css" element={<CSS />} />
           <Route path="/js" element={<JS />} />
